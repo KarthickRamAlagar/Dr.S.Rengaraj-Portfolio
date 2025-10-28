@@ -128,11 +128,6 @@ npm run build
 ```bash
 npm run preview
 ```
-## 🪪 License
-
-This project is licensed under the MIT License.
-You’re free to use, modify, and distribute it with attribution.
-
 ## 🙏 Acknowledgements
 
 <p>React
