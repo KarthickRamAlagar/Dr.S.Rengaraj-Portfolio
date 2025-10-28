@@ -6,7 +6,7 @@ const ProtectedRoutes = ({ children }) => {
   const { pathname } = useLocation();
 
   if (!isLoaded) return null;
-  if (!isSignedIn) return <Navigate to="/Dr.Rengaraj/?sign-in=true" />;
+  if (!isSignedIn) return <Navigate to="/Dr.Rengaraj/?sign-in=true" replace />;
 
   // Optional: role-based redirect
   if (user && !user.unsafeMetadata?.role && pathname !== "/Dr.Rengaraj/") {
