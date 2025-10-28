@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import UserDetails from "@/Components/Biography/UserDetails";
