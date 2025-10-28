@@ -104,7 +104,7 @@ The architecture focuses on **performance, scalability, and accessibility**, int
 ## 🛠 Installation
 
 ```bash
-git clone https://github.com/your-username/sr-portfolio.git
+git clone https://github.com/KarthickRamAlagar/Dr.S.Rengaraj-Portfolio
 cd sr-portfolio
 npm install
 ```
