@@ -1,10 +1,10 @@
 // src/router.jsx
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layouts/AppLayout";
-import Home from "../pages/Home";
-import Bio from "../pages/Bio";
-import ProtectedRoutes from "../components/ProtectedRoutes";
-import NotFound from "../pages/NotFound";
+import Home from "../Pages/Home";
+import Bio from "../Pages/Bio";
+import ProtectedRoutes from "../Components/ProtectedRoutes";
+import NotFound from "../Pages/NotFound";
 import EducationSection from "@/Components/Education/EducationSection";
 import ExperienceSection from "@/Components/Experience/ExperienceSection";
 import Contact from "@/Components/Contact/Contact";
