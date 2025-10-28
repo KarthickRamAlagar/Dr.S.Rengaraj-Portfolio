@@ -4,7 +4,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from "@/Components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Array of specialization names with gradient classes

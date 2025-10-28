@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 const EducationDetailCard = ({ degree, gradient, delay = 0, onViewInfo }) => {
   const [isFlipped, setIsFlipped] = useState(false);

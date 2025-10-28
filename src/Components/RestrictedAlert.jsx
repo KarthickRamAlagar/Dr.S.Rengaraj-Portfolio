@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LogoSR from "../utils/LogoSR";
+import LogoSR from "../Utils/LogoSR";
 
 const RestrictedAlert = ({ show, message, onClose }) => {
   useEffect(() => {

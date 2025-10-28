@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, MessageCircle, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import { downloadPublicFolderAsZip } from "@/utils/LogoSR";
-import RestrictedAlert from "@/components/RestrictedAlert";
+import RestrictedAlert from "@/Components/RestrictedAlert";
 
 const Hero = ({ onViewProfile }) => {
   const ref = useRef(null);

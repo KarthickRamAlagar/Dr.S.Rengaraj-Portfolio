@@ -1,7 +1,7 @@
 import { forwardRef, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Card } from "@/components/ui/card";
+import { Card } from "@/Components/ui/card";
 import {
   professionalExperience,
   visitingFacultyExperience,

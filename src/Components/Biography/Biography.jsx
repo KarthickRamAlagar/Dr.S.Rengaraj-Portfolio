@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import { useRef } from "react";
 import { forwardRef } from "react";
 
