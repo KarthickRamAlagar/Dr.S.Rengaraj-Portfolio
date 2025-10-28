@@ -1,129 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base Reset */
 body,
 html,
 #root {
   width: 100%;
   overflow-x: hidden;
 }
+
+/* 3D Transform Utilities */
 .perspective-1000 {
   perspective: 1000px;
 }
-
 .preserve-3d {
   transform-style: preserve-3d;
 }
-
 .backface-hidden {
   backface-visibility: hidden;
 }
-
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-  }
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* ------------------------------
+   BASE VARIABLES (Light + Dark)
+------------------------------- */
 @layer base {
   :root {
     --background: 0 0% 4%;
     --foreground: 0 0% 98%;
-
     --card: 0 0% 8%;
     --card-foreground: 0 0% 98%;
-
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
-
     --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 98%;
-
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 65%;
-
     --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 199 89% 48%;
-
     --radius: 0.75rem;
 
+    /* Sidebar */
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 0 0% 95%;
     --sidebar-primary: 199 89% 48%;
@@ -179,18 +106,8 @@ All colors MUST be HSL.
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 199 89% 48%;
-    --sidebar-background: 0 0% 6%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 199 89% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 199 89% 48%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -201,6 +118,9 @@ All colors MUST be HSL.
   }
 }
 
+/* ------------------------------
+   UTILITIES
+------------------------------- */
 @layer utilities {
   .glass {
     background: rgba(255, 255, 255, 0.05);
@@ -222,22 +142,7 @@ All colors MUST be HSL.
     text-shadow: 0 0 20px currentColor;
   }
 
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-
-  .preserve-3d {
-    transform-style: preserve-3d;
-  }
-
-  .backface-hidden {
-    backface-visibility: hidden;
-  }
-
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  }
-  /* contact section */
+  /* Contact Section */
   .contact-container {
     @apply relative z-10 max-w-xl w-full sm:px-10 px-5;
   }
@@ -251,27 +156,29 @@ All colors MUST be HSL.
   }
 
   .field-btn {
-    @apply bg-black-500 px-5 py-2 min-h-[48px] rounded-lg shadow-black-200 shadow-2xl 
-         flex justify-center items-center text-lg text-white gap-3 w-full;
+    @apply bg-black-500 px-5 py-2 min-h-[48px] rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg text-white gap-3 w-full;
   }
 
   .field-btn_arrow {
     @apply w-2.5 h-2.5 object-contain invert brightness-100;
   }
 
-  /*  footer */
+  /* Footer */
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
 }
+
+/* ------------------------------
+   ANIMATIONS
+------------------------------- */
+
 .glow-blue {
-  box-shadow: 0 0 60px -10px rgba(56, 189, 248, 0.6); /* Tailwind sky-400 */
+  box-shadow: 0 0 60px -10px rgba(56, 189, 248, 0.6);
 }
 
 .waving-hand {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+  animation: wave-animation 2.5s infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 }
@@ -284,46 +191,44 @@ All colors MUST be HSL.
     rgba(255, 255, 255, 0.000025) 50%,
     rgba(255, 255, 255, 0.025) 100%
   );
-  @keyframes wave-animation {
-    0% {
-      transform: rotate(0deg);
-    }
-    15% {
-      transform: rotate(14deg);
-    }
-    30% {
-      transform: rotate(-8deg);
-    }
-    40% {
-      transform: rotate(14deg);
-    }
-    50% {
-      transform: rotate(-4deg);
-    }
-    60% {
-      transform: rotate(10deg);
-    }
-    70% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .animate-float {
-    animation: float 2.5s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
-  }
+}
 
-  .animate-float {
-    animation: float 2.5s ease-in-out infinite;
+.animate-float {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+/*  Keyframes must be outside selectors */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
