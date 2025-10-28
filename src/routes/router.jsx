@@ -11,7 +11,7 @@ import Contact from "@/Components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
-    path: "/Dr.Rengaraj/",
+    path: "/Dr.S.Rengaraj-Portfolio/",
     element: <AppLayout />,
     children: [
       {
