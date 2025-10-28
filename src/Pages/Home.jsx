@@ -1,15 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/Components/Hero/Navbar";
 import Hero from "@/Components/Hero/Hero";
-import RestrictedAlert from "@/components/RestrictedAlert";
+import RestrictedAlert from "@/Components/RestrictedAlert";
 import { useUser } from "@clerk/clerk-react";
 import StatsSection from "@/Components/Hero/StatsSection";
 import Biography from "@/Components/Biography/Biography";
-import Footer from "@/components/Footer";
-import EducationSection from "@/components/Education/EducationSection";
-import SpecializtionSection from "@/components/Specialization/SpecializtionSection";
+import Footer from "@/Components/Footer";
+import EducationSection from "@/Components/Education/EducationSection";
+import SpecializtionSection from "@/Components/Specialization/SpecializtionSection";
 import ExperienceSection from "@/Components/Experience/ExperienceSection";
-import Contact from "../components/Contact/Contact";
+import Contact from "../Components/Contact/Contact";
 
 const Home = () => {
   const { user } = useUser();
