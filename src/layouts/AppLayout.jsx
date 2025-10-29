@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Hero/Navbar";
-import SignInRedirectHandler from "../Components/SignInRedirectHandler";
+// import SignInRedirectHandler from "../Components/SignInRedirectHandler";
 
 const AppLayout = () => {
   const location = useLocation();
