@@ -11,6 +11,7 @@ function App() {
   return (
     <ClerkProvider
       publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}
+      appearance={{ baseTheme: shadesOfPurple }}
       afterSignInUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_IN_URL}
       afterSignUpUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_UP_URL}
       afterSignOutUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_OUT_URL}
