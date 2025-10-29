@@ -23,7 +23,7 @@ const NotFound = () => {
         <CardFooter className="flex gap-2">
           <Button
             className="w-full text-xl"
-            onClick={() => navigate("/Dr.Rengaraj/")}
+            onClick={() => navigate("/Dr.S.Rengaraj-Portfolio")}
           >
             Go to Home
           </Button>

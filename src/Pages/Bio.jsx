@@ -58,7 +58,7 @@ const Bio = () => {
       {/* Globe & List */}
       <UserDetails />
       <Button
-        onClick={() => navigate("/Dr.Rengaraj/")}
+        onClick={() => navigate("/Dr.S.Rengaraj-Portfolio")}
         size="lg"
         className="glass-strong glow hover:scale-105 transition-transform text-xl flex justify-center mx-auto my-12"
       >

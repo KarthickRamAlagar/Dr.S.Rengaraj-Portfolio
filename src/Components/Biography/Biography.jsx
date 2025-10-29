@@ -61,7 +61,7 @@ const Biography = forwardRef((props, ref) => {
               the leading educators in my field."
             </p> */}
             <Button
-              onClick={() => navigate("/Dr.Rengaraj/BioGraphy")}
+              onClick={() => navigate("/Dr.S.Rengaraj-Portfolio/BioGraphy")}
               size="lg"
               className="glass-strong glow hover:scale-105 transition-transform text-xl"
             >
