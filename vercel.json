@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/", "destination": "/Dr.Rengaraj/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/Dr.Rengaraj/:match*", "destination": "/Dr.Rengaraj/" }
   ]
