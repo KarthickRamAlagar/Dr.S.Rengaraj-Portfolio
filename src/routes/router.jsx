@@ -11,7 +11,7 @@ import Contact from "@/Components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Dr.Rengaraj/",
     element: <AppLayout />,
     children: [
       {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "Bio",
+        path: "BioGraphy",
         element: <Bio />,
       },
       {
@@ -48,6 +48,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  // 🔥 Global catch-all route for unmatched paths
   {
     path: "*",
     element: <NotFound />,
