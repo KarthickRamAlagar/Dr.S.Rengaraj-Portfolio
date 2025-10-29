@@ -9,7 +9,7 @@ const AppLayout = () => {
 
   return (
     <div className="bg-radial-dark text-white min-h-screen w-screen overflow-x-hidden flex flex-col">
-      <SignInRedirectHandler />
+      {/* <SignInRedirectHandler /> */}
       {!hideNavbar && <Navbar />}
       <main className="flex-grow">
         <Outlet />
