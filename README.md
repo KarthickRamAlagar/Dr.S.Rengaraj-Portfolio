@@ -21,7 +21,7 @@
 <strong>Dr. S. Rengaraj — Head of Commerce & Mentor to Thousands</strong> is an interactive academic portfolio showcasing 25+ years of excellence in commerce education, research, and student mentorship.  
 Built with modern web technologies and stunning visual effects, this digital profile serves as both a professional identity and an inspiration hub for learners and educators alike.
   </p>
-  <p><a href="https://your-live-site-link.com" target="_blank"><strong>🌐 Visit Dr.S.Rengaraj'S Portfolio</strong></a></p>
+  <p><a href="https://karthickramalagar.github.io/Dr.S.Rengaraj-Portfolio/" target="_blank"><strong>🌐 Visit Dr.S.Rengaraj'S Portfolio</strong></a></p>
 </div>
 
 ---
