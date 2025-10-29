@@ -1,9 +1,12 @@
+import mku from "/assets/mku.png";
+import tnou from "/assets/tnou.png";
+
 const educationData = [
   {
     degree: "Ph.D.",
     fullForm: "Doctor of Philosophy",
     gradient: "bg-gradient-to-br from-pink-500 to-pink-100",
-    image: "/assets/mku.png",
+    image: mku,
     university: "Madurai Kamaraj University, Madurai",
     yearOfResearch: "2016",
     researchTitle:
@@ -17,7 +20,7 @@ const educationData = [
     degree: "M.Com.",
     fullForm: "Master of Commerce",
     gradient: "bg-gradient-to-br from-sky-500 to-sky-100",
-    image: "/assets/mku.png",
+    image: mku,
     university: "Madurai Kamaraj University, Madurai",
     yearOfPassing: "1995",
     researchTitle: "-",
@@ -28,7 +31,7 @@ const educationData = [
     degree: "M.Phil.",
     fullForm: "Master of Philosophy",
     gradient: "bg-gradient-to-br from-purple-500 to-purple-100",
-    image: "/assets/mku.png",
+    image: mku,
     university: "Madurai Kamaraj University, Madurai",
     yearOfResearch: 2000,
     researchTitle:
@@ -43,7 +46,7 @@ const educationData = [
     degree: "M.B.A.",
     fullForm: "Master of Business Administration (Finance)",
     gradient: "bg-gradient-to-br from-green-500 to-green-100",
-    image: "/assets/tnou.png",
+    image: tnou,
     university: "TamilNadu Open University, Chennai",
     yearOfResearch: "May 2011",
     researchTitle: "Financial Performance in Tower Steels Limited, Madurai",

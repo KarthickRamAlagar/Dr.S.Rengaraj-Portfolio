@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/Components/ui/button";
 import { useRef } from "react";
 import { forwardRef } from "react";
-
+import BioImg from "/assets/Biography.png";
 const Biography = forwardRef((props, ref) => {
   const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ const Biography = forwardRef((props, ref) => {
           >
             <div className="relative w-full max-w-md mx-auto">
               <img
-                src="/assets/Biography.png"
+                src={BioImg}
                 alt="Open book representing biography"
                 className="w-full h-auto object-cover rounded-xl shadow-xl z-0"
               />

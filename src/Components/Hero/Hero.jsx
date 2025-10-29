@@ -4,7 +4,7 @@ import { Mail, MessageCircle, FileText } from "lucide-react";
 import { Button } from "@/Components/ui/button";
 import { downloadPublicFolderAsZip } from "@/Utils/LogoSR";
 import RestrictedAlert from "@/Components/RestrictedAlert";
-
+import HeroImg from "/assets/Rengaraj.png";
 const Hero = ({ onViewProfile }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
@@ -65,7 +65,7 @@ const Hero = ({ onViewProfile }) => {
           >
             <div className="w-[320px] md:w-[380px] sm:w-[220px] max-w-full rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden shadow-2xl shadow-primary/20 relative">
               <img
-                src="/assets/Rengaraj.png"
+                src={HeroImg}
                 alt="Dr. S. Rengaraj portrait"
                 className="w-full h-auto object-cover"
               />

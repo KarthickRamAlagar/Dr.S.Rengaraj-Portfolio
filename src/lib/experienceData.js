@@ -1,8 +1,12 @@
 // lib/experienceData.js
+import M from "/assets/M.png";
+import MI from "/assets/MI.png";
+import ME from "/assets/ME.png";
+import T from "/assets/T.png";
 
 export const professionalExperience = [
   {
-    logoPath: "/assets/M.png", // Mannar Thirumalai Naicker College
+    logoPath: M, // Mannar Thirumalai Naicker College
     position: "Assistant Professor",
     duration: "1997 - 2014",
     department: "Department of Commerce (Self-Finance)",
@@ -10,7 +14,7 @@ export const professionalExperience = [
     location: "Madurai",
   },
   {
-    logoPath: "/assets/M.png",
+    logoPath: M,
     position: "Head and Assistant Professor",
     duration: "2015 - 2022",
     department: "Department of Commerce (Self-Finance)",
@@ -18,7 +22,7 @@ export const professionalExperience = [
     location: "Madurai",
   },
   {
-    logoPath: "/assets/M.png",
+    logoPath: M,
     position: "Head and Assistant Professor",
     duration: "2022 - Present",
     department:
@@ -30,7 +34,7 @@ export const professionalExperience = [
 
 export const visitingFacultyExperience = [
   {
-    logoPath: "/assets/MI.png", // Madurai Institute of Social Sciences
+    logoPath: MI, // Madurai Institute of Social Sciences
     position: "Part-time Lecturer",
     duration: "2002 - 2006",
     department: "Department of Commerce",
@@ -38,7 +42,7 @@ export const visitingFacultyExperience = [
     location: "Madurai",
   },
   {
-    logoPath: "/assets/ME.png", // Meenakshi Mission Hospital College
+    logoPath: ME, // Meenakshi Mission Hospital College
     position: "Part-time Lecturer",
     duration: "2006 - 2013",
     department: "BBA – Hospital Administration",
@@ -46,7 +50,7 @@ export const visitingFacultyExperience = [
     location: "Madurai",
   },
   {
-    logoPath: "/assets/T.png", // Thiagarajar College
+    logoPath: T, // Thiagarajar College
     position: "Part-time Lecturer",
     duration: "2006 - 2013",
     department: "Department of Commerce",

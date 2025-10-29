@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import RestrictedAlert from "../RestrictedAlert.jsx";
 import { forwardRef } from "react";
+import Arrow from "/assets/arrow-up.png";
 const Contact = forwardRef((props, ref) => {
   const FormRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -155,7 +156,7 @@ const Contact = forwardRef((props, ref) => {
               <button className="field-btn" type="submit" disabled={loading}>
                 {loading ? "Sending..." : "Send Message"}
                 <img
-                  src="/assets/arrow-up.png"
+                  src={Arrow}
                   alt="arrow-up"
                   className="field-btn_arrow w-4 h-4 object-contain brightness-100"
                 />
