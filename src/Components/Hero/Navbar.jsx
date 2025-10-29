@@ -203,9 +203,13 @@ const Header = ({ canNavigate, onRestrictedClick, sectionRefs }) => {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={handleOverlayClick}
         >
-          <SignIn
+          {/* <SignIn
             signUpForceRedirectUrl="/Dr.S.Rengaraj-Portfolio/"
             fallbackRedirectUrl="/Dr.S.Rengaraj-Portfolio/"
+          /> */}
+          <SignIn
+            fallbackRedirectUrl="/Dr.S.Rengaraj-Portfolio/"
+            signUpUrl={null} // 🚫 disables sign-up link
           />
         </div>
       )}
