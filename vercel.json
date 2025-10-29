@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    { "source": "/Dr.Rengaraj/:match*", "destination": "/Dr.Rengaraj/" }
+  ]
 }
