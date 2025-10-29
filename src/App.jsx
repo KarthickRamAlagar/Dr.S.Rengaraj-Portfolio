@@ -10,12 +10,11 @@ if (!PUBLISHABLE_KEY) {
 function App() {
   return (
     <ClerkProvider
-      publishableKey={PUBLISHABLE_KEY}
-      appearance={{ baseTheme: shadesOfPurple }}
-      signInUrl="/Dr.S.Rengaraj-Portfolio/?sign-in=true"
+      publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}
+      afterSignInUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_IN_URL}
+      afterSignUpUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_UP_URL}
+      afterSignOutUrl={import.meta.env.VITE_CLERK_AFTER_SIGN_OUT_URL}
       signUpUrl={null}
-      afterSignInUrl="/Dr.S.Rengaraj-Portfolio/"
-      afterSignOutUrl="/Dr.S.Rengaraj-Portfolio/"
     >
       <RouterProvider router={router} />
     </ClerkProvider>
